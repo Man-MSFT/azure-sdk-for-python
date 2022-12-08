@@ -51,7 +51,7 @@ class TestRegistry(AzureRecordedTestCase):
         # don't do a standard dictionary equality check to avoid being surprised by auto-set tags
         assert rest_registry.tags["one"] == "two"
         assert rest_registry.tags["three"] == "five"
-        # TODO turn back on when managed RG issue resolves
+        # TODO re-enable once managed RG tags in all regions and stable
         # assert rest_registry.properties.managed_resource_group_tags["one"] == "two"
         # assert rest_registry.properties.managed_resource_group_tags["three"] == "five"
 
